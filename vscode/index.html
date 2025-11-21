@@ -10,6 +10,13 @@
 
 <body>
 
+    <!-- Animated Background Music Notes -->
+    <div class="music-note" style="left: 10%; animation-delay: 0s;">♪</div>
+    <div class="music-note" style="left: 30%; animation-delay: 3s;">♫</div>
+    <div class="music-note" style="left: 50%; animation-delay: 6s;">♪</div>
+    <div class="music-note" style="left: 70%; animation-delay: 9s;">♫</div>
+    <div class="music-note" style="left: 90%; animation-delay: 12s;">♪</div>
+
     <div class="container">
 
         <!-- NAVBAR -->
@@ -113,6 +120,25 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- Pop-up Modal -->
+    <div id="song-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modal-song-title">Judul Lagu</h2>
+            <p id="modal-song-artist">Artis</p>
+            <div class="modal-buttons">
+                <button class="platform-btn spotify-btn" onclick="openPlatform('spotify')">
+                    <span class="platform-icon"><img src="asset/spotify.png" alt="spotify" width="110"></span>
+                    Buka di Spotify
+                </button>
+                <button class="platform-btn youtube-btn" onclick="openPlatform('youtube')">
+                    <span class="platform-icon"><img src="asset/youtube.png" alt="youtube" width="90"></span>
+                    Buka di YouTube
+                </button>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
